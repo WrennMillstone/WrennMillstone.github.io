@@ -3,21 +3,54 @@ html {
     text-align: center;
     color: white;
     background-color: #282d30;
+    font-weight: 400;
 }
 
+body {
+    margin: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 200;
+}
+
+/*coming soon*/
 .coming_soon {
+    
+    background-image: url("../images/caution_tex.png");
+    background-size: cover;
+}
+
+.coming_soon a {
+    color: red;
+}
+
+.coming_soon_overlay {
+    background-color: black;
+    opacity: .75;
+    width: 100%;
+}
+
+.coming_soon_text {
+    opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
 }
 
 .coming_soon ul {
     width: fit-content;
 }
 
+.cstext {
+    font-size: 32px;
+}
 
-
+/*Banner*/
 .banner img {
     max-width: 40%;
 }
