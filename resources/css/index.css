@@ -1,0 +1,16 @@
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+
+}
+
+.coming_soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+}
+
+.coming_soon ul {
+    width: fit-content;
+}
