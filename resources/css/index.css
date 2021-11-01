@@ -1,3 +1,18 @@
+/*
+Designed mobile first, desktop breakpoint at line
+-------------------------------------------------------- 
+Colors:
+#282d30 - dark grey
+#82d398 - light green
+#ffffff - white
+#000000 - black
+--------------------------------------------------------
+TOC:
+16 - Base Level Styles
+58 - Header
+63 - Showcase section
+*/
+
 html {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -30,6 +45,10 @@ h2 {
     font-size: 35px;
 }
 
+h3{
+    font-size: 26px;
+}
+
 strong {
     font-weight: 700;
 }
@@ -38,14 +57,44 @@ strong {
     font-weight: 200;
 }
 
-/*Banner*/
-.banner img {
-    max-width: 20%;
+/*Header*/
+header img {
+    max-width: 30%;
 }
 
-/*Websites*/
-.websites {
+/*Showcase*/
+main {
     background-color: #82d398;
-    padding: 16px 16px;
-    margin: 0 15%;
+    padding: 36px 5%;
+    margin: 0 0;
+}
+
+main h2{
+    margin: 0;
+}
+
+.websites_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteBlock{
+    position: relative;
+    min-width: 400px;
+    margin: 26px 0;
+}
+
+.siteBlock img{
+    width: 100%;
+    height: auto;
+}
+
+.siteText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
