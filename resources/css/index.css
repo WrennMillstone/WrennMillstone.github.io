@@ -92,19 +92,20 @@ main h2{
     color: #282d30;
 }
 
-.siteBlock img{
+/* .siteBlock img{
     height: 420px;
-}
+} */
 
 .siteImg{
-    display: none;
+    /* display: none; */
+    height: 420px;
 }
 
 .siteText{
     height: 100%;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
 }
 
 .siteText h3{
