@@ -37,12 +37,18 @@ function openTxt(text, img)
 {
     if (text == null) return;
     img.classList.remove('active');
-    text.classList.add('active');
+    img.addEventListener(transitionEndEventName, function imgLis(){
+        text.classList.add('active');
+        img.removeEventListener(transitionEndEventName,imgLis);
+    });
 }
 
 function closeTxt(text, img)
 {
     if (img == null) return;
     text.classList.remove('active');
-    img.classList.add('active');
+    text.addEventListener(transitionEndEventName, function txtLis(){
+        img.classList.add('active');
+        text.removeEventListener(transitionEndEventName,txtLis);
+    });
 }
