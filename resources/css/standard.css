@@ -22,6 +22,10 @@ body {
     margin: 0;
 }
 
+header img {
+    max-width: 30%;
+}
+
 .pageBG {
     background-image: url("../images/codeBG.PNG");
     background-size: cover;
