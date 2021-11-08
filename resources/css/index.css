@@ -39,6 +39,7 @@ TOC:
 }
 
 .siteImg{
+    height: 420px;
     transform: scale(0, 1);
     box-shadow: 0px 0px 20px;
     transition: 200ms ease-in-out;
