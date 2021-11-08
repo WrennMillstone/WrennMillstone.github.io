@@ -1,5 +1,21 @@
-//start of showcase functionality; this causes the images to look like they flip to reveal text when clicked
+//gets the correct transition end name for the current browser
+function getTransitionEndEventName() {
+    var transitions = {
+        "transition"      : "transitionend",
+        "OTransition"     : "oTransitionEnd",
+        "MozTransition"   : "transitionend",
+        "WebkitTransition": "webkitTransitionEnd"
+     }
+    let bodyStyle = document.body.style;
+    for(let transition in transitions) {
+        if(bodyStyle[transition] != undefined) {
+            return transitions[transition];
+        } 
+    }
+}
+let transitionEndEventName = getTransitionEndEventName();
 
+//start of showcase functionality; this causes the images to look like they flip to reveal text when clicked
 const showcaseImgs = document.querySelectorAll('.siteImg');
 const showcaseTxt = document.querySelectorAll('.siteText');
 let txtTarget = ''; 
