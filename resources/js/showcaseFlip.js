@@ -18,7 +18,6 @@ let transitionEndEventName = getTransitionEndEventName();
 //start of showcase functionality; this causes the images to look like they flip to reveal text when clicked
 const showcaseImgs = document.querySelectorAll('.siteImg');
 const showcaseTxt = document.querySelectorAll('.siteText');
-let txtTarget = ''; 
 
 showcaseImgs.forEach(img => {
     img.addEventListener('click', () => {
