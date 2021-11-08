@@ -12,9 +12,6 @@ TOC:
 58 - Header
 63 - Showcase section
 */
-.showcaseLink{
-    font-size: 2.2rem;
-}
 
 /*Header*/
 header img {
@@ -30,6 +27,10 @@ main {
 
 main h2{
     margin: 0;
+}
+
+.showcaseLink{
+    font-size: 2.2rem;
 }
 
 .websites_container{
