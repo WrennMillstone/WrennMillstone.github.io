@@ -88,8 +88,8 @@ main h2{
 .siteBlock{
     height: 420px;
     margin: 26px 0;
-    background-color: white;
     color: #282d30;
+    position: static;
 }
 
 .siteBlock img{
@@ -97,14 +97,26 @@ main h2{
 }
 
 .siteImg{
-    display: block;
+    transform: scale(0, 1);
+    transition: 200ms ease-in-out;
+}
+
+.siteImg.active{
+    transform: scale(1, 1);
 }
 
 .siteText{
     height: 100%;
     top: 0;
     left: 0;
-    display: none;
+    position: absolute;
+    background-color: white;
+    transform: scale(0, 1);
+    transition: 200ms ease-in-out;
+}
+
+.siteText.active{
+    transform: scale(1, 1);
 }
 
 .siteText h3{

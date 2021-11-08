@@ -1,0 +1,33 @@
+//start of showcase functionality; this causes the images to look like they flip to reveal text when clicked
+
+const showcaseImgs = document.querySelectorAll('.siteImg');
+const showcaseTxt = document.querySelectorAll('.siteText');
+let txtTarget = ''; 
+
+showcaseImgs.forEach(img => {
+    img.addEventListener('click', () => {
+        const text = document.querySelector(img.dataset.textTarget)
+        openTxt(text, img);
+    })
+})
+
+showcaseTxt.forEach(text => {
+    text.addEventListener('click', () => {
+        const img = document.querySelector(text.dataset.imgTarget)
+        closeTxt(text, img);
+    })
+})
+
+function openTxt(text, img)
+{
+    if (text == null) return;
+    img.classList.remove('active');
+    text.classList.add('active');
+}
+
+function closeTxt(text, img)
+{
+    if (img == null) return;
+    text.classList.remove('active');
+    img.classList.add('active');
+}
