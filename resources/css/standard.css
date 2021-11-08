@@ -26,6 +26,12 @@ header img {
     max-width: 30%;
 }
 
+main{
+    background-color: #82d398;
+    padding: 18px 5%;
+    margin: 0;
+}
+
 .pageBG {
     background-image: url("../images/codeBG.PNG");
     background-size: cover;
